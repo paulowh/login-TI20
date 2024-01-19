@@ -10,6 +10,15 @@
 <body>
     <div class="container login-container">
         <h2 class="text-center mb-4" >Login</h2>
+        <?php
+            if(isset($_GET['mensagem'])){
+                echo '<h3 class="text-center mb-4">Senha ou usuario incorreto</h3>';
+            }
+            //$_GET  -> captura as informações passada pelo o metodo GET 
+            //$_POST -> captura as informações passada pelo o metodo POST 
+            //empty  -> verifica se esta vazio
+            //isset  -> verifica se a variavel foi declarada
+        ?>
         <form method="POST" action="validar-senha.php">
             <div class="mt-1 form-group">
                 <label for="usuario">Usuario:</label>
