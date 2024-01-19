@@ -10,11 +10,11 @@
 <body>
     <div class="container cadastro-container">
         <h2 class="text-center mb-4" >Cadastro</h2>
-        <form method="POST" action="validar-senha.php">
+        <form method="POST" action="criar-cadastro.php">
            
             <div class="mt-1 form-group">
-                <label for="usuario">Nome:</label>
-                <input type="text" class="form-control" id="usuario" name="usuario" placeholder="Digite o Usuario" >
+                <label for="nome">Nome:</label>
+                <input type="text" class="form-control" id="nome" name="nome" placeholder="Digite o nome" >
             </div>
 
             <div class="mt-1 form-group">
@@ -33,7 +33,7 @@
             </div>
 
             <div class="mt-2 text-center">
-                <button type="submit" class="btn btn-warning">Cadastro</button>
+                <button type="submit" class="btn btn-success">Cadastro</button>
             </div>
         </form>
     </div>
