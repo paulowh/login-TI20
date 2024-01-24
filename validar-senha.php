@@ -7,8 +7,14 @@ $senha   = $_POST['senha'];
 function validarLogin($usuario, $senha){
     $conexao = new PDO("mysql:host=localhost;dbname=db_login", "root", "");
 
-    $script = "SELECT * FROM tb_usuarios WHERE usuario ='" . $usuario . "' AND senha ='" . $senha . "' ";
+    $script =   "SELECT * FROM 
+                    tb_usuarios 
+                WHERE 
+                    usuario ='" . $usuario . "' 
+                    AND senha ='" . $senha . "' 
+                ";
 
+    var_dump($script);
     $resultado = $conexao->query($script);
     $lista = $resultado->fetchAll();
 
